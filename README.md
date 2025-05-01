@@ -1,97 +1,119 @@
-# Indian Sign Language Audio-to-Visual Translator (ISLAT)
+#SignBuddy - 2-Way ISL Communication#
+Overview
+SignBuddy is a platform designed to facilitate communication between hearing and speech-impaired individuals by supporting two-way interaction through Indian Sign Language (ISL). The system features two key functionalities:
 
-**An application designed to convert spoken language into Indian Sign Language (ISL) visuals, enabling effective communication with the deaf and speech-impaired community.**
+Sign to Speech: Recognizes ISL hand gestures and translates them into spoken words and text.
 
----
+Speech to Sign: Converts spoken language into ISL using animated gestures and text.
 
-## Features
-- **User-Friendly Interface**: Built using EasyGui for simplicity and ease of use.
-- **Speech Recognition**: Real-time transcription through Google Speech API for online use and CMU Sphinx for offline functionality.
-- **Text Preprocessing**: Employs natural language processing for accurate text handling and ISL mapping.
-- **ISL Visualization**: Displays ISL gestures using animated GIFs for phrases and static images for individual letters.
-- **Scalability**: A modular design that allows for the inclusion of a more extensive ISL vocabulary and non-manual signs in the future.
+SignBuddy provides an accessible communication platform for those who rely on ISL, enabling real-time, seamless interactions.
 
----
+Features
+Sign to Speech: Detects ISL hand gestures using the camera and translates them into spoken words and text.
 
-## Objectives
-The **Indian Sign Language Audio-to-Visual Translator (ISLAT)** aims to:
-1. Bridge the communication gap between the deaf and hearing communities.
-2. Provide real-time, accurate translation of spoken language into ISL visuals.
-3. Create a scalable and user-friendly tool for various societal contexts like education, public spaces, and healthcare.
+Speech to Sign: Converts spoken language into ISL using animated gestures and text, supporting multiple languages (Hindi, Telugu, and more).
 
----
+Real-time Interaction: Seamless two-way communication that allows users to switch between speech and sign.
 
-## Algorithm Overview
+Technologies Used
+Frontend:
 
-1. **Speech Input**:
-   - Captures real-time audio using PyAudio.
-   - Calibrates for ambient noise for better accuracy.
-2. **Speech Recognition**:
-   - Converts audio to text using Sphinx (offline) or Google Speech API (online).
-3. **Text Processing**:
-   - Normalizes text (lowercasing, removing punctuation).
-   - Matches phrases or decomposes text into letters.
-4. **ISL Mapping**:
-   - Retrieves ISL visuals (GIFs for phrases, images for letters) using a dictionary-based approach.
-5. **Visualization**:
-   - Displays ISL outputs via Tkinter (for GIFs) or Matplotlib (for letter images).
-6. **Error Handling**:
-   - Manages unrecognized input gracefully.
-7. **User Feedback**:
-   - Displays intuitive outputs and error messages for better usability.
+HTML
 
----
+CSS
 
-## Installation and Setup
+JavaScript
 
-### Prerequisites
-- Python 3.8 or higher
-- Required libraries: `speech_recognition`, `pyaudio`, `Pillow`, `numpy`, `matplotlib`, `easygui`, `tkinter`.
+React (for dynamic components)
 
-### Steps to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ISLAT.git
-   cd ISLAT
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-3. Run the application:
-   ```bash
-   python main.py
+Backend:
 
-### Usage
-1. **Launch the application and choose Live Voice from the menu**.
-2. **Speak into the microphone. The system will:**
-   - Recognize speech.
-   - Convert it to text.
-   - Display corresponding ISL visuals or GIFs.
-3. **To exit**, say **goodbye** or select the exit option.
+Node.js
 
----
+Express
 
-### Results
+MongoDB (for storing sign gesture data)
 
-#### Example Outputs
-- **Phrase Recognition**:
-  - **Input**: "Good morning."
-  - **Output**: Displays the GIF for "Good morning" in ISL.
+Sign Language Recognition:
 
-- **Character Mapping**:
-  - **Input**: "hello."
-  - **Output**: Sequential display of hand gestures for each letter in "hello."
+TensorFlow.js or OpenCV (for real-time hand gesture recognition)
 
----
+MediaPipe or similar libraries for gesture tracking
 
-### Future Scope
-- Incorporation of non-manual ISL components (facial expressions, head movements).
-- Support for multiple languages and accents.
-- Development of mobile and AR/VR applications for immersive learning.
-- Integration with IoT devices for real-time public service applications.
+Speech Recognition:
 
----
+Google Speech API (for Speech to Sign)
 
-### References
-1. **Neural Sign Language Translation**: [IEEE Xplore](https://ieeexplore.ieee.org/document/8578910).
-2. **CISLR: Corpus for Indian Sign Language Recognition**: [EMNLP](https://aclanthology.org/2022.emnlp-main.707/).
-3. **Indian Sign Language Recognition System using SURF with SVM and CNN**: [DOI](https://doi.org/10.1016/j.array.2022.100141).
+Web Audio API (for audio playback)
+
+Animations:
+
+Three.js or a similar 3D library for displaying animated ISL gestures
+
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/signbuddy.git
+cd signbuddy
+Install dependencies:
+
+For frontend:
+
+bash
+Copy code
+cd frontend
+npm install
+For backend:
+
+bash
+Copy code
+cd backend
+npm install
+Start the server:
+
+For frontend:
+
+bash
+Copy code
+npm start
+For backend:
+
+bash
+Copy code
+node server.js
+Open your browser and navigate to http://localhost:3000 for the frontend interface.
+
+Usage
+Sign to Speech:
+
+Open the Sign to Speech page.
+
+Allow camera access.
+
+Start making gestures to see the translation to speech and text.
+
+Speech to Sign:
+
+Open the Speech to Sign page.
+
+Use the microphone to speak in any supported language (e.g., Hindi, Telugu).
+
+The system will translate your speech into animated ISL gestures.
+
+Contributing
+We welcome contributions to improve SignBuddy! If you find a bug or have an idea for a new feature, feel free to create an issue or submit a pull request.
+
+Fork the repository.
+
+Create your branch (git checkout -b feature/your-feature).
+
+Commit your changes (git commit -am 'Add your feature').
+
+Push to your branch (git push origin feature/your-feature).
+
+Create a new Pull Request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
