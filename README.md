@@ -1,6 +1,7 @@
-#SignBuddy - 2-Way ISL Communication#
-Overview
-SignBuddy is a platform designed to facilitate communication between hearing and speech-impaired individuals by supporting two-way interaction through Indian Sign Language (ISL). The system features two key functionalities:
+# **SignBuddy - 2-Way ISL Communication**
+## **Overview**
+
+**SignBuddy** is a platform designed to facilitate communication between hearing and speech-impaired individuals by supporting two-way interaction through Indian Sign Language (ISL). The system features two key functionalities:
 
 Sign to Speech: Recognizes ISL hand gestures and translates them into spoken words and text.
 
@@ -85,7 +86,7 @@ Copy code
 node server.js
 Open your browser and navigate to http://localhost:3000 for the frontend interface.
 
-Usage
+__Usage__
 Sign to Speech:
 
 Open the Sign to Speech page.
@@ -115,5 +116,6 @@ Push to your branch (git push origin feature/your-feature).
 
 Create a new Pull Request.
 
-License
+__License__
 This project is licensed under the MIT License - see the LICENSE file for details.
+
