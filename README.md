@@ -116,6 +116,3 @@ Push to your branch (git push origin feature/your-feature).
 
 Create a new Pull Request.
 
-__License__
-This project is licensed under the MIT License - see the LICENSE file for details.
-
