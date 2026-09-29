@@ -106,13 +106,4 @@ The system will translate your speech into animated ISL gestures.
 Contributing
 We welcome contributions to improve SignBuddy! If you find a bug or have an idea for a new feature, feel free to create an issue or submit a pull request.
 
-Fork the repository.
-
-Create your branch (git checkout -b feature/your-feature).
-
-Commit your changes (git commit -am 'Add your feature').
-
-Push to your branch (git push origin feature/your-feature).
-
-Create a new Pull Request.
 
